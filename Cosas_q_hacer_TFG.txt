@@ -1,0 +1,7 @@
+Ver como se formar las NN en BindsNET
+
+¿Puede modelar no spiking neural networks? -> Neuronas graduales
+
+
+
+
