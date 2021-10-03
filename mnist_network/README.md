@@ -27,7 +27,7 @@ The directory tree of the models folder is the following:
 *X* represents the number of excitatory neurons of the model, *Y* the batch size, *Z* the number of epochs and *F* the fold. Remember that, as a 6-folds cross-validation procesdure is used, for each unique configuration, six independent models will be created, each one with its own files.
 
 # Implemented code
-The code has been thoroughly commented in order to point out those technical details that may seem strange at first sight. The base code can be found [here](https://github.com/BindsNET/bindsnet/blob/master/examples/mnist/batch_eth_mnist.py). Several topics that may be useful are discussed below
+The code has been thoroughly commented in order to point out those technical details that may seem strange at first sight. The base code can be found [here](https://github.com/BindsNET/bindsnet/blob/master/examples/mnist/batch_eth_mnist.py). Several topics that may be useful are discussed below.
 ## Execution instructions and possible arguments
 For executing the code run the following line inside the *mnist_network* folder:
 ```bash
@@ -93,4 +93,7 @@ Variable in code | Description | Value |
 ## Neurons behaviour
 To understand what the code of the neurons does, it is crucial to understand the behavior of Leaky Integrate and Fire (LIF) neurons. This behavior is defined by the image below. Once understood, the Integrate and Fire (IF) neurons are the same but without voltage loss, as well as the implemented Dielhs&Cook nodes, which are the same as the LIF neurons but with an adaptive threshold, which is explained in the document.
 
-![LIF neurons behaviour](https://ieeexplore.ieee.org/mediastore_new/IEEE/content/media/7433297/9329180/8482490/rathi1-2872014-large.gif)
+![LIF neurons behaviour](./lif_neurons_behaviour.gif)
+
+**Source**: N. Rathi and K. Roy, "STDP Based Unsupervised Multimodal Learning With Cross-
+Modal Processing in Spiking Neural Networks", *IEEE Transactions on Emerging Topics in Computational Intelligence*, vol. 5, no. 1, pp. 143-153, Feb., 2021. [On-line]. Available: https://ieeexplore.ieee.org/document/8482490. Accessed: Aug. 10, 2021.
